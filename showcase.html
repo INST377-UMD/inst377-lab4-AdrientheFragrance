@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Javascript Showcase </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body style="background-color: rgb(235, 221, 221)");">
+
+        <header>
+            <h1> Javascript Showcase </h1>
+        </header>
+
+        <div class="container1">
+            <form method="get" onsubmit="return showAlert()">
+                <div class="form">
+                    <label for="name"> Name </label>
+                    <input type="text" id="name" name="name" required>
+                    <input type="submit" value="Alert Me">
+                </div>
+            </form>
+        </div>
+        
+        <div class="container2">
+            <button class="changeColor" onClick="changeColor()">Change Color</button>
+        </div>
+
+        <div class="container3">
+            <form method="get" onsubmit="return validateText()" action="/lab4/validated.html">
+                <div class="form">
+                    <label for="enterText"> Enter Text </label>
+                    <input type="text" id="enterText" name="enterText" required>
+                    <input type="submit" value="Validate Text">
+                </div>
+            </form>
+        </div>
+
+        <div class="container4">
+            <button class="addText" onClick="addText()">Add Text</button>
+        </div>
+
+        <script>
+
+            function showAlert() {
+                console.log("Shows alert 'Hi",document.getElementById("name").value,"!' when '",document.getElementById("name").value,"' is entered");
+                var name = document.getElementById("name").value;
+                alert("Hi " + name + "!");
+            }
+
+            function changeColor() {
+                console.log("Changes current background color", document.body.style.backgroundColor);
+                if (document.body.style.backgroundColor === "rgb(235, 221, 221)") {  
+                    document.body.style.backgroundColor = "rosybrown";
+                } else {
+                    document.body.style.backgroundColor = "rgb(235, 221, 221)"; 
+                }
+                console.log("Background color changed to", document.body.style.backgroundColor);
+            }
+
+            function validateText() {
+                console.log("Validates user input", document.getElementById("enterText").value);
+                var text = document.getElementById("enterText").value;
+                var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+                if (validation.test(text)) {
+                    alert("INVALID TEXT: REMOVE SPECIAL CHARACTERS");
+                    return false;
+                }
+                return true;
+            }
+
+            function addText() {
+                console.log("Concatenates '- Add Text' to header",document.querySelector("h1"));
+                const header = document.querySelector("h1");
+                const textNode = document.createTextNode(" - Add Text");
+                header.appendChild(textNode);
+            }
+            
+        </script>
+
+    </body>
+
+</html>
