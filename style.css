@@ -1,0 +1,134 @@
+body {
+    background-color: #ebdddd;
+    font-family: Georgia, serif;
+}
+
+header {
+    text-align: center;
+    color: rosybrown;
+    background-color: #372a22;
+    font-style: italic;
+    margin: 0px;
+    padding: 20px;
+}
+
+input[type="text"] {
+    font-family: Georgia, serif;
+    padding: 8px 20px 8px 20px;
+    margin: 2px;
+    display: inline-block;
+    border: 2px solid #b49f9f;
+    border-radius: 5px;
+}
+
+input[value="Alert Me"] {
+    background-color: #bc7a7a;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    margin: 4px 4px;
+    border: none;
+    border-radius: 30px;
+}
+
+input[value="Alert Me"]:hover {
+    background-color: #aa6565;
+}
+
+button.changeColor {
+    background-color: rosybrown;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    margin: 4px 4px;
+    border: none;
+    border-radius: 30px;
+}
+
+button.changeColor:hover {
+    background-color: #a47070;
+}
+
+input[value="Validate Text"] {
+    background-color: #7a9a8e;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    margin: 4px 4px;
+    border: none;
+    border-radius: 30px;
+}
+
+input[value="Validate Text"]:hover {
+    background-color: #618e7d;
+}
+
+button.addText {
+    background-color: #baa79e;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    margin: 4px 4px;
+    border: none;
+    border-radius: 30px;
+}
+
+button.addText:hover {
+    background-color: #a59083;
+}
+
+.container1 {
+    color: #6d6863;
+    font-weight: bold;
+    background-color: white;
+    width: 40%;
+    margin: 40px 60px 20px;
+    padding: 20px;
+    float: left;
+    border-radius: 20px;
+    border: 4px solid #e1c6c6;
+    text-align: center;
+}
+
+.container2 {
+    color: #6d6863;
+    font-weight: bold;
+    background-color: white;
+    width: 40%;
+    margin: 40px 60px 20px 0px;
+    padding: 20px;
+    float: right;
+    border-radius: 20px;
+    border: 4px solid #e1c6c6;
+    text-align: center;
+}
+
+.container3 {
+    color: #6d6863;
+    font-weight: bold;
+    background-color: white;
+    width: 40%;
+    margin: 40px 60px 20px;
+    padding: 20px;
+    float: left;
+    border-radius: 20px;
+    border: 4px solid #e1c6c6;
+    text-align: center;
+}
+
+.container4 {
+    color: #6d6863;
+    font-weight: bold;
+    background-color: white;
+    width: 40%;
+    margin: 40px 60px 20px 0px;
+    padding: 20px;
+    float: right;
+    border-radius: 20px;
+    border: 4px solid #e1c6c6;
+    text-align: center;
+}
